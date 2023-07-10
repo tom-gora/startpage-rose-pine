@@ -51,29 +51,14 @@ body {
   animation: float 5s ease-in-out infinite;
 }
 
-/* .cloud { */
-/* 	background: var(--cloud-color); */
-/* 	outline: none; */
-/* 	border-radius: 50%; */
-/* 	width: 1.2rem; */
-/* 	height: 1.2rem; */
-/* 	margin: 0.2rem 2.4rem 0 0; */
-/* 	vertical-align: top; */
-/* 	box-shadow: var(--cloud-color) 0.6rem 0.3rem 0 0.2rem, */
-/* 		var(--cloud-color) 1.5rem 0.7rem 0 -0.1rem, */
-/* 		var(--cloud-color) 2.1rem 0.1rem 0 0.2rem, */
-/* 		var(--cloud-color) 1.6rem -0.4rem 0 0.1rem, */
-/* 		var(--cloud-color) 0.7rem -0.5rem 0 -0.1rem; */
-/* } */
-
 .cloud {
-  width: 90px;
-  height: 30px;
+  width: 50px;
+  height: 17px;
   background: var(--cloud-color);
-  box-shadow: 10px 10px var(--bg-color);
+  box-shadow: 5px 5px var(--bg-color);
   border-radius: 100px;
-  margin: 0 auto;
-  /* scale: 0.25; */
+  margin-inline: auto;
+  margin-top: 1.5rem;
 }
 .cloud::after,
 .cloud::before {
@@ -84,17 +69,17 @@ body {
   border-radius: inherit;
 }
 .cloud::after {
-  width: 25px;
-  height: 25px;
-  top: -30px;
-  right: 28px;
+  width: 14px;
+  height: 14px;
+  top: -16px;
+  right: 16px;
   /* display: none; */
 }
 .cloud::before {
-  width: 45px;
-  height: 45px;
-  top: -18px;
-  left: 33px;
+  width: 23px;
+  height: 23px;
+  top: -11px;
+  left: 18px;
 }
 
 .rain {

@@ -98,11 +98,9 @@
           <!-- svelte-ignore a11y-no-static-element-interactions -->
           <div id="weather-container" on:click={updateWeather}>
             {#if weather}
+              <div id="temperature">{temperature}°</div>
+              <div id="location">in {town}</div>
               <div class="weather-icon {weatherClass}" />
-              <span>
-                <div id="temperature">{temperature}°</div>
-                <div id="location">in {town}</div>
-              </span>
             {/if}
           </div>
         </div>
@@ -203,16 +201,21 @@
     margin-inline: auto;
     width: 86%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 1fr;
     justify-content: center;
   }
   #heading {
     justify-self: start;
   }
   #weather-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-inline: auto;
     justify-self: end;
-    width: 12rem;
-    height: min-content;
+    width: min-content;
+    height: 4rem;
     margin-left: 4rem;
     opacity: 0;
     animation: weather-appear 0.3s ease-out 0.2s forwards;
@@ -221,7 +224,8 @@
     cursor: pointer;
   }
   .weather-icon {
-    float: right;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
   }
   #temperature {
     display: inline-block;
@@ -232,7 +236,7 @@
   #location {
     white-space: nowrap;
   }
-  #weather-container span {
+  #weather-container {
     display: inline-flex;
     margin-top: 2rem;
     align-items: end;
@@ -261,6 +265,7 @@
     margin-bottom: 2.5rem;
     opacity: 0;
     animation: text-appear 0.3s ease-out 0.225s forwards;
+    white-space: nowrap;
   }
   .label {
     margin: 1rem 0 0.25rem 0;
