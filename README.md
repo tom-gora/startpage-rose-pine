@@ -76,3 +76,5 @@ To change the name and enable weather, hover in the bottom right corner and a se
 ### BIG THANKS TO REFACT0R FOR SUPPORT IN INSTALLING THIS THE FIRST TIME MONTHS AGO
 
 #### 🚀🚀🚀 when I did not know what I was doing but wanted to learn 🚀🚀🚀
+
+\* Free to use and redistribute under GPL license.
