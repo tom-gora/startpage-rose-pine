@@ -109,7 +109,7 @@
             <div class="link-column">
               {#each column as link}
                 <a href={link.url}>
-                  <span class="arrow">></span>
+                  <span class="arrow" />
                   <span class="text">{link.name}</span>
                 </a>
                 <br />
