@@ -9,6 +9,8 @@
 package
 manifest.json
 node-modules
+build
+.vscode
 
 # End of https://www.toptal.com/developers/gitignore/api/svelte
 
