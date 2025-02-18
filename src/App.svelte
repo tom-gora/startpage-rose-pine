@@ -139,7 +139,7 @@
     <button id="settings-button" on:click={() => (settings = !settings)}>
       settings
     </button>
-    <a href="#" id="version">v1.2.2</a>
+    <a href="/" id="version">v1.2.2</a>
   </div>
 </main>
 
